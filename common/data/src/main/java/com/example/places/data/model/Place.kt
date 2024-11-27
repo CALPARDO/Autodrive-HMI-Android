@@ -25,6 +25,7 @@ data class Place(
     val description: String,
     val latitude: Double,
     val longitude: Double
+//    val category: String
 )
 
 fun Place.toIntent(action: String): Intent {
