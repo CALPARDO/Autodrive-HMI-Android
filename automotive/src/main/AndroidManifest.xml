@@ -17,13 +17,13 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-feature
-        android:name="android.hardware.type.automotive"
-        android:required="true" />
+<!--    <uses-feature-->
+<!--        android:name="android.hardware.type.automotive"-->
+<!--        android:required="true" />-->
 
-    <uses-feature
-        android:name="android.software.car.templates_host"
-        android:required="true" />
+<!--    <uses-feature-->
+<!--        android:name="android.software.car.templates_host"-->
+<!--        android:required="true" />-->
 
     <uses-feature
         android:name="android.hardware.wifi"
@@ -49,27 +49,27 @@
         android:theme="@style/Theme.Places">
 
         <meta-data
-            android:name="com.android.automotive"
+            android:name="com.google.android.gms.car.application"
             android:resource="@xml/automotive_app_desc" />
 
-        <activity
-            android:name="androidx.car.app.activity.CarAppActivity"
-            android:exported="true"
-            android:launchMode="singleTask"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar">
+<!--        <activity-->
+<!--            android:name="androidx.car.app.activity.CarAppActivity"-->
+<!--            android:exported="true"-->
+<!--            android:launchMode="singleTask"-->
+<!--            android:theme="@android:style/Theme.DeviceDefault.NoActionBar">-->
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
 
-            <!--
-                This <meta-data> element tells the operating system to allow the Activity to run
-                even while UX restrictions are in place (i.e. while the vehicle is in motion)
-            -->
-            <meta-data
-                android:name="distractionOptimized"
-                android:value="true" />
-        </activity>
+<!--            &lt;!&ndash;-->
+<!--                This <meta-data> element tells the operating system to allow the Activity to run-->
+<!--                even while UX restrictions are in place (i.e. while the vehicle is in motion)-->
+<!--            &ndash;&gt;-->
+<!--            <meta-data-->
+<!--                android:name="distractionOptimized"-->
+<!--                android:value="true" />-->
+<!--        </activity>-->
     </application>
 </manifest>

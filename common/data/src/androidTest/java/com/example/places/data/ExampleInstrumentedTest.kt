@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.places.data
+package com.calpardo.places.data
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
@@ -33,6 +33,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.android.cars.data.test", appContext.packageName)
+        assertEquals("com.calpardo.android.cars.data.test", appContext.packageName)
     }
 }

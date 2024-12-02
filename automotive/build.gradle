@@ -20,16 +20,16 @@ plugins {
 }
 
 android {
-    namespace 'com.example.places.automotive'
-    compileSdk 33
+    namespace 'com.calpardo.places.automotive'
+    compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.places.automotive"
+        applicationId "com.calpardo.places.automotive"
         // All AAOS vehicles that support the Car App Library run API 29 or higher
         minSdk 29
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        targetSdk 34
+        versionCode 5
+        versionName "1.0-auto"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -45,6 +45,9 @@ android {
             languageVersion.set(JavaLanguageVersion.of(17))
         }
         jvmToolchain(17)
+    }
+    lint{
+        disable 'Instantiatable'
     }
 }
 

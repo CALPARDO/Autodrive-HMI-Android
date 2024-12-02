@@ -20,15 +20,15 @@ plugins {
 }
 
 android {
-    namespace 'com.example.android.cars.places'
+    namespace 'com.calpardo.android.cars.places'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.android.cars.places"
+        applicationId "com.calpardo.android.cars.places"
         minSdk 23
-        targetSdk 33
+        targetSdk 34
         versionCode 1
-        versionName "1.0"
+        versionName "1.0-app"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
